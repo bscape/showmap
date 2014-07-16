@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent">
+
+<fragment
+    android:id="@+id/fragmentMap"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    class="com.google.android.gms.maps.SupportMapFragment"
+    />
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+</LinearLayout>
+
+<Spinner
+    android:id="@+id/spinnerGenre"
+    android:layout_width="151dp"
+    android:layout_height="wrap_content"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentTop="true"
+    android:layout_marginTop="56dp"
+    android:background="#60000000" />
+
+<android.support.v4.widget.DrawerLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:id="@+id/drawer_layout"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent" >
+ 
+  <!-- The main content view -->
+ 
+  <LinearLayout
+    android:id="@+id/left_draw"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+ 
+    <TextView
+      android:id="@+id/drawer_main_text"
+      android:layout_width="match_parent"
+      android:layout_height="100dp"
+      android:gravity ="center" />
+  
+  </LinearLayout>
+ 
+  <!-- NavigatonDrawer部分 -->
+ 
+  <LinearLayout
+    android:id="@+id/left_drawer"
+    android:layout_width="240dp"
+    android:layout_height="match_parent"
+    android:layout_gravity="left"
+    android:background="#FFF" >
+ 
+    <TextView
+      android:id="@+id/drawer_text"
+      android:layout_width="match_parent"
+      android:layout_height="48dp"
+      android:gravity = "center" />
+ 
+  </LinearLayout>
+</android.support.v4.widget.DrawerLayout>
+
+</RelativeLayout>
